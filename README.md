@@ -1,66 +1,23 @@
-## Foundry
+# EthUSDC Lending Protocol
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Descripción
 
-Foundry consists of:
+**EthUSDC Lending Protocol** es una plataforma descentralizada de préstamos donde puedes depositar tu ETH como colateral y obtener USDC de manera instantánea. El sistema utiliza un oráculo externo para determinar el precio de ETH y asegura la salud del préstamo mediante ratios de colateralización y liquidaciones automáticas. Sencillo, seguro y transparente: experimenta el DeFi más puro.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+---
 
-## Documentation
+## Características
 
-https://book.getfoundry.sh/
+- **Préstamos inmediatos**: Deposita ETH y recibe USDC al instante.
+- **Liquidaciones justas**: Si tu préstamo cae por debajo del ratio mínimo de colateralización (150%), cualquiera puede liquidarlo y obtener una recompensa del 10%.
+- **Oráculo externo**: El precio de ETH se obtiene de manera automatizada para máxima transparencia.
+- **Totalmente testeado**: Incluye pruebas unitarias y fuzzing para máxima seguridad.
 
-## Usage
+---
 
-### Build
+## Instalación y pruebas
 
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+1. Clona el repositorio:
+   ```bash
+   git clone <repo-url>
+   cd lending-protocol
